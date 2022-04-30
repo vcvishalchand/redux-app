@@ -5,9 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { legacy_createStore } from 'redux';
 import { Provider } from 'react-redux';
-import rootReducer from './redux/reducers/index';
-const store=legacy_createStore(rootReducer);
-console.log("store", store);
+import { rootReducer } from './redux/reducers';
+const store = legacy_createStore(rootReducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

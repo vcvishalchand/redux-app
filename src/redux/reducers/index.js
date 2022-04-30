@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import cardItem from "./reducer";
+import { cartItem } from "./reducer";
 
-export default combineReducers({
-    cardItem
+export const rootReducer = combineReducers({
+    cartItem
 });

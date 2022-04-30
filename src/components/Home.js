@@ -18,14 +18,12 @@ const Home = (props) => {
                 <div className="btn-wrapper item">
                     <button
                         onClick={() =>
-                            props.addToCardHandler({ price: 500, name: 'I phone' })
+                            props.addToCartHandler({ price: 500, name: 'I phone' })
                         }
                     > Add To Cart</button>
-                    <button className="remore-btn"
-                        onClick={() =>
-                            props.removeToCardHandler()
-                        }
-                    > Remove To Cart</button>
+                    <button
+                        onClick={()=> props.removeToCartHandler()}
+                    className="remore-btn"> Remove To Cart</button>
                 </div>
             </div>
         </div>
